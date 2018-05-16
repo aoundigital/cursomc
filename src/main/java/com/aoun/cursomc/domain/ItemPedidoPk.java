@@ -18,13 +18,13 @@ public class ItemPedidoPk implements Serializable {
 	@JoinColumn(name="produto_id")
 	private Produto produto;
 	
-	
 	public Pedido getPedido() {
 		return pedido;
 	}
 	public void setPedido(Pedido pedido) {
 		this.pedido = pedido;
 	}
+	
 	public Produto getProduto() {
 		return produto;
 	}
@@ -60,8 +60,4 @@ public class ItemPedidoPk implements Serializable {
 			return false;
 		return true;
 	}
-	
-	
-	
-
 }
